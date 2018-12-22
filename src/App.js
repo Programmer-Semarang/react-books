@@ -35,11 +35,13 @@ class Book extends React.Component{
 
   render(){
     return(
-      <div>
-        <h1>{this.props.judul}</h1>
-        <h3>{this.props.author.name}</h3>
-        <hr />
-      </div>)
+
+        <div className="card" style={{width: "18rem"}}>
+          <div className="card-body">
+            <h5 className="card-title">{this.props.judul}</h5>
+            <p className="card-text">{this.props.author.name}</p>
+          </div>
+        </div>)
   }
 
 }
